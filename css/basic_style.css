@@ -81,7 +81,7 @@ h1{  color: rgba(8, 141, 165, 1);
      HOVER, TRANSLATE & TRANSFORM EFFECTS
      -------------------------------------*/
 
-    .container .square:nth-child(-n+4):hover {
+    .container .squares:nth-child(-n+4):hover {
         background-image:url("..\images\icon\sleepyicons.png") ;
     }
     .squares:nth-child(1):hover {
@@ -178,7 +178,7 @@ h1{  color: rgba(8, 141, 165, 1);
      HOVER, TRANSLATE & TRANSFORM EFFECTS
      -------------------------------------*/
 
-    .container .square:nth-child(-n+4):hover {
+    .container .squares:nth-child(-n+4):hover {
         background-image:url("..\images\icon\sleepyicons.png") ;
     }
     .squares:nth-child(1):hover {
