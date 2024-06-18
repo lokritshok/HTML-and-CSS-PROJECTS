@@ -81,7 +81,7 @@ h1{  color: rgba(8, 141, 165, 1);
      -------------------------------------*/
 
     .container .squares:nth-child(-n+4):hover {
-        background-image:url("..\\images\\icon\\sleepyicons.png") ;
+        background-image:url("..\images\icon\sleepyicons.png") ;
     }
     .squares:nth-child(1):hover {
         background: #13b4ff;
