@@ -12,28 +12,13 @@ h1{  color: rgba(8, 141, 165, 1);
         border: 2px solid black;
         border-radius: 5%;
     } 
-    /*------------------------------
-    SELECT ALL SQUARES IN THE ARRAY
-    -------------------------------*/
-    
-    .container .squares:nth-child(-n+4) {
-        background-image:url("..\\images\\icon\\smileyicons2.png") ;
-        color: #fff;
-        float:left;
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-        border: 1px solid black;
-        border-radius: 25%;
-        cursor: pointer;
-    }
 
     /*--------------------------------
      SELECT ALL SQUARES IN THE ARRAY
      --------------------------------*/
 
     .container .squares:nth-child(-n+4) {
-        background-image:url("..\\images\\icon\\smileyicons2.png") ;
+        background-image:url("..\\images\\icon\\smileyface2.png") ;
         color: #fff;
         float: left;
         width: 100px;
@@ -81,7 +66,7 @@ h1{  color: rgba(8, 141, 165, 1);
      -------------------------------------*/
 
     .container .squares:nth-child(-n+4):hover {
-        background-image:url("..\\images\\icon\\sleepyicons.png") ;
+        background-image:url("..\\images\\icon\\smileyface1.png") ;
     }
     .squares:nth-child(1):hover {
         background: #13b4ff;
@@ -94,4 +79,46 @@ h1{  color: rgba(8, 141, 165, 1);
     }
     .squares:nth-child(4):hover {
         background: #77b800;
+    }
+    .button:hover{
+        background-color: #331b14;
+        color: #fff;
+        cursor: pointer;
+    }
+    /*--------------------------------------
+        HOVER< TRANSLATE & TRANSFORM EFFECTS
+    ----------------------------------------*/
+
+    .container .squares:nth-child(-n+4):hover {
+     background-image: url("..\\images\\icon\\smileyface1.png");
+     transform: scale(.5);
+     animation-name: race;
+     animation-duration: 2.5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+    }
+    .squares:nth-child(1):hover {
+    background: #13b4ff;
+    }
+    .squares:nth-child(2):hover {
+    background: #d861af;
+    }
+    .squares:nth-child(3):hover {
+    background: #81205f;
+    }
+    .squares:nth-child(4):hover {
+    background: #77b800;
+    }
+
+    /*-----------------------------------
+           ANIMATION EFFECT
+    -------------------------------------*/
+    @keyframes race {
+        0%, 100% {
+            transform: translateY(0px);
+            background-image: url("..\\images\\icon\\smileyface1.png");
+        }
+        50% {
+            transform: translateY(300px)
+        }
     }
