@@ -90,7 +90,7 @@ h1{  color: rgba(8, 141, 165, 1);
     ----------------------------------------*/
 
     .container .squares:nth-child(-n+4):hover {
-     background-image: url("..\\images\\icon\\smileyface1.png");
+     background-image: url("..\\images\\icon\\smileyface1.png") ;
      transform: scale(.5);
      animation-name: race;
      animation-duration: 2.5s;
@@ -116,7 +116,7 @@ h1{  color: rgba(8, 141, 165, 1);
     @keyframes race {
         0%, 100% {
             transform: translateY(0px);
-            background-image: url("..\\images\\icon\\smileyface1.png");
+            background-image: url("..\\images\\icon\\smileyface1.png") ;
         }
         50% {
             transform: translateY(300px)
