@@ -42,6 +42,7 @@ body {
 .menu li:hover {
     background-color: #5eafdf;
     color: #fff;
+  
 }
 
 .menu li:hover ul{
