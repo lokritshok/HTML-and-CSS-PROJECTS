@@ -1,0 +1,99 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #a6ad11;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  /* HOME*/
+.home {
+    margin-top: 70px; /* Add a top margin to avoid content overlay */
+  }
+
+/* Container holding the image*/ 
+
+.gallery {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Container holding the text */
+
+.centered{
+    position: bottom-left;
+    bottom: 100px;
+    left: 25px;
+    font-size: 40px;
+    color: red;
+}
+
+h1{text-align: center;
+    color: rgb(64, 203, 117);
+    position: relative;
+
+}
+h3{text-align: center;
+    color: goldenrod;
+    position: relative;
+}
+
+p{
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+
+
+img {filter: grayscale(100%);
+     border-radius: 15px;
+     align-content: center;
+     transition:.5s ease;
+     backface-visibility:hidden;
+     cursor: pointer;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .gallery:hover .img{
+    opacity: 0.3;
+    cursor: pointer;
+  }
+  
+  .gallery:hover .middle {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+
+footer {
+    text-align: center;
+}
