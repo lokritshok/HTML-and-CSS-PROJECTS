@@ -35,7 +35,7 @@ h6 {
 
 .column {
     float: left;
-    width: 12.5%;
+    width: 25%;
 }
 
 /* The Modal (background)*/
@@ -84,6 +84,11 @@ h6 {
 
 .mySlides {
     display: none;
+    
+}
+
+.images {
+    width: 100%;
 }
 
 /* Next & previous buttons*/
