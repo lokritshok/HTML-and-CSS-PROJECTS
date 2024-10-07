@@ -14,7 +14,17 @@
 
                 <!---Navbar-->
 
+             
                     <div class="container">
+
+                         <!--Breadcrumb component (nav bar)-->
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#about">About</a></li>
+                          <li class="breadcrumb-item"><a href="#showtimes">Showtimes</a></li>
+                          <li class="breadcrumb-item active"><a href="#deals">Deals</a></li>
+                        </ol>
+                      </nav>
 
                         <nav class="navbar navbar-expand-lg navbar-light bg-info">
                             
@@ -44,7 +54,7 @@
                             </div>
                           </div>
 
-                   <!--End Navbar-->
+                   <!--/Navbar-->
 
                     <!--About-->
 
@@ -87,7 +97,7 @@
                           </div>
                   </div>
 
-                  <!--End about-->
+                  <!--/about-->
 
                    <!-- Show times-->
 
@@ -136,43 +146,88 @@
                           </div>
                         </div>
                       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     </div>
+                    <!--/show times-->
 
+                    <!--jumbotron heading-->
 
+                    <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+                      <div class="container">
+                        <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+                        <p class="lead">Check out our monthly deals...</p>
+                        <!--movie deals-->
 
-
-
-                   <!--End show times-->
-
-                    <!--Deals-->
-                
-                   <div class="text-center">
-                    <form>
-                      <h1 class="text-primary my-5" id="deals">Sign up for movie club rewards!</h1>
-                      <div class="form-group">
-                       
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals...!</button>
+                        <!--/movie deals-->
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                  </div>
+                    </div>
+                   <!--/jumbotron heading-->
 
-                  <!--End deals-->
+                   <!--signup form-->
+
+                   <div class="row">
+                    <div class="container text-center col-md-6" id="deals">
+                      <div class="container text-center">
+                        <h1 class="display-5 my-4 col-lg-auto text-primary">Stay current on movies!</h1>
+                        <div class="input-group mb-5 input-group-sm">
+                          <input type="text" class="form-control" placeholder="Email">
+                          <span class="input-group-btn">
+                            <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body"
+                            data-toggle="popover" data-placement="top"
+                            data-content="Submit your email to receive a bonus movie reward!">
+                            Sign up!
+                          </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                   </div>
+
+                   <!--/signup form-->
+
+                   <!--form modal-->
+
+                   <div class="modal" tabindex="-1" role="dialog" id="register">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Register to receive movie deals!</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <fieldset class="form-group">
+                              <label for="firstname">First Name:</label>
+                              <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                              <label for="lastname">Last Name:</label>
+                              <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="text" class="form-control" id="email" placeholder="Email...">
+                            </fieldset>
+                            <fieldset class="form-group">
+                              <label for="password">Password:</label>
+                              <!--Added Bootstrap tooltip to form password input-->
+                              <input type="password" class="form-control" id="password" placeholder="Password..."
+                              data-toggle="tool-tip" title="Passwords are case sensitive.">
+                            </fieldset>
+                          </form>
+                       
+                          </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <!--/form modal-->
+
 
                   <!--Footer-->
 
@@ -194,12 +249,20 @@
                     </ul>
                   </div>
 
-                 <!--End footer-->
+                 <!--/ footer-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script>
+      $('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
+
+    </script>
   </body>
 </html>
